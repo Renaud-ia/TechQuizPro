@@ -11,6 +11,37 @@ Tech Quiz Pro is an ongoing project designed to help individuals master technica
 - **Instant Feedback:** Get immediate evaluation of your answers using the ChatGPT API, highlighting strengths and areas for improvement.
 - **Upcoming Features:** Test your soft skills, input job postings directly for more tailored questions, and receive detailed explanations for any mistakes in your responses.
 
+## Installation
+
+1. Clone this repository to your local machine:
+
+git clone https://github.com/Renaud-ia/TechQuizPro.git
+
+2. Build Docker containers for the frontend and backend parts:
+- For the frontend part:
+  ```
+  cd frontend
+  docker build -t tech-quiz-pro-frontend .
+  ```
+- For the backend part:
+  ```
+  cd backend
+  docker build -t tech-quiz-pro-backend .
+  ```
+
+3. Run the Docker containers:
+- For the frontend part:
+  ```
+  docker run -d -p 3000:3000 tech-quiz-pro-frontend
+  ```
+- For the backend part:
+  ```
+  docker run -d -p 5000:5000 tech-quiz-pro-backend
+  ```
+
+4. Open your browser and go to http://localhost:3000 to use the application.
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
