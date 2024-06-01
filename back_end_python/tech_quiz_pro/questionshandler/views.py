@@ -12,7 +12,7 @@ from django.views.decorators.http import require_POST
 
 from .models import Question, Experience, Job
 
-API_KEY_GPT = "sk-proj-PacqffrWEhpxvwjGbbAFT3BlbkFJnxy4YPMFIexooGA7h0zQ"
+API_KEY_GPT = ""
 MODEL = "gpt-3.5-turbo"
 
 logger = logging.getLogger(__name__)
